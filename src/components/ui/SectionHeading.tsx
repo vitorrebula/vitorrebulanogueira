@@ -10,8 +10,10 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ index, label, title, align = 'left', description }: SectionHeadingProps) {
   return (
-    <Reveal className={align === 'right' ? 'text-right' : 'text-left'}>
-      <div className={`flex items-baseline gap-3 font-mono text-xs tracking-[0.25em] text-accent uppercase ${align === 'right' ? 'justify-end' : ''}`}>
+    <Reveal className={align === 'right' ? 'text-left sm:text-right' : 'text-left'}>
+      <div
+        className={`flex items-baseline gap-3 font-mono text-xs tracking-[0.25em] text-accent uppercase ${align === 'right' ? 'sm:justify-end' : ''}`}
+      >
         <span className="text-muted-2">{index}</span>
         <span>{label}</span>
         <span className="h-px flex-1 max-w-16 bg-line" />
@@ -20,7 +22,9 @@ export function SectionHeading({ index, label, title, align = 'left', descriptio
         {title}
       </h2>
       {description ? (
-        <p className={`mt-5 max-w-[54ch] text-base text-muted leading-relaxed ${align === 'right' ? 'ml-auto' : ''}`}>
+        <p
+          className={`mt-5 max-w-[54ch] text-base text-muted leading-relaxed ${align === 'right' ? 'sm:ml-auto' : ''}`}
+        >
           {description}
         </p>
       ) : null}

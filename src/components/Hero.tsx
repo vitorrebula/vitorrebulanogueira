@@ -13,10 +13,10 @@ const STATS = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative flex min-h-[100dvh] items-center overflow-hidden border-b border-line pt-24">
+    <section className="relative flex min-h-[100dvh] items-start overflow-hidden border-b border-line pt-28 lg:items-center lg:pt-24" id="top">
       <AmbientGlow />
 
-      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 gap-16 px-6 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
+      <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 sm:gap-16 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
         <div>
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
