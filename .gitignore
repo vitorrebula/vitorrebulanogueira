@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Segredos e artefatos
+.env
+.env.*
+.vercel
+.env*
+!.env.example

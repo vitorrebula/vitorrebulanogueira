@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build:kb": "tsx --env-file-if-exists=.env scripts/build-kb.ts",
+    "build": "npm run build:kb && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "^2.27.0",
     "@phosphor-icons/react": "^2.1.10",
     "framer-motion": "^13.1.1",
     "react": "^19.2.8",
@@ -23,6 +25,7 @@
     "@vitejs/plugin-react": "^6.1.0",
     "oxlint": "^1.79.0",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vite": "^8.2.2"
   }

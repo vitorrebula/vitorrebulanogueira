@@ -1,6 +1,7 @@
 import { About } from './components/About'
 import { AIFocus } from './components/AIFocus'
 import { Beyond } from './components/Beyond'
+import { ChatWidget } from './components/ChatWidget'
 import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 import { Hero } from './components/Hero'
@@ -24,6 +25,7 @@ function App() {
         <Beyond />
       </main>
       <Contact />
+      <ChatWidget />
     </div>
   )
 }
